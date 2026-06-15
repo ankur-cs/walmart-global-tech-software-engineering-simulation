@@ -11,13 +11,13 @@ This repository contains my solutions, code implementations, architecture artifa
 
 The simulation focused on solving enterprise-inspired software engineering challenges across Data Structures & Algorithms, Software Architecture, Relational Database Design, and Data Processing, mirroring real-world engineering scenarios encountered in large-scale technology organizations.
 
-> 🎯 **Official Program Mandate:** *"Solve complex technical challenges for a range of Walmart departments as part of our Software Engineering team."*
+ 🎯 **Official Program Mandate:** *"Solve complex technical challenges for a range of Walmart departments as part of our Software Engineering team."*
 
 **Official Program Introduction:** The Walmart Global Tech Advanced Software Engineering Job Simulation was introduced by a **Walmart Global Tech USA Senior Technical Fellow Leader**, who welcomed participants and shared insights into Walmart's engineering culture, enterprise software development practices, challenge objectives, and the expected technical deliverables for each task.
 
-> 🎥 Industry-Guided Learning Experience: Each task was accompanied by guidance from Walmart Global Tech engineers, program managers, and recruiting leaders, offering valuable insights into enterprise software development workflows, problem-solving methodologies, and hiring expectations.
+🎥 **Industry-Guided Learning Experience**: Each task was accompanied by guidance from Walmart Global Tech engineers, program managers, and recruiting leaders, offering valuable insights into enterprise software development workflows, problem-solving methodologies, and hiring expectations.
 
-> 🏆 Successfully completed all program tasks and earned an official job simulation program completion professional certificate signed by **Suresh Kumar, Global Chief Technology Officer (CTO) and Chief Development Officer (CDO) at Walmart**.
+ 🏆 **Successfully completed all program tasks and earned an official job simulation program completion professional certificate signed by** **Suresh Kumar, Global Chief Technology Officer (CTO) and Chief Development Officer (CDO) at Walmart**.
 
 **Verification Reference:**
 * Enrolment Code: `KxPGdSEmEG2weCCeP`
