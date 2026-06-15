@@ -5,50 +5,46 @@
 [![Simulation](https://img.shields.io/badge/Simulated%20By-Forage-0071CE?style=for-the-badge)](https://www.theforage.com)
 
 ## 📌 Overview
-This repository contains the enterprise-grade engineering deliverables completed during the **Walmart Global Tech USA Advanced Software Engineering Job Simulation**. The program involved tackling high-scale backend engineering challenges faced by Walmart’s core platforms, focusing heavily on **algorithmic optimization**, **distributed system architecture (UML)**, and **relational database modeling (ERD)**.
+This repository contains the engineering deliverables completed during the **Walmart Global Tech USA Advanced Software Engineering Job Simulation** via Forage. The project showcases programmatic solutions to real-world backend challenges faced by Walmart’s digital retail infrastructure, organized into four key production tasks.
 
-* **Verification Reference:** Program Completion Code: `KxPGdSEmEG2weCCeP` / `pfx986kDP2x89GLgq`
-
----
-
-## 🛠️ Core Engineering Tasks & Deliverables
-
-### 1. Algorithmic Optimization: Power-of-Two Max Heap
-* **Problem Statement:** Walmart's high-throughput inventory and shipping pipelines require low-latency data structures. Traditional binary heaps ($2^n$) can introduce processing bottlenecks under massive, parallel reads and writes.
-* **Solution Built:** Engineered a highly performant, generic **Power-of-Two Max Heap** data structure in Java. The data structure dynamically configures its branching factor as a power of two ($2^x$), significantly optimizing CPU cache locality and minimizing tree height for massive retail datasets.
-* **Key Implementations:** 
-  * Replaced costly arithmetic multiplication and division with high-performance bit-shifting operations (`index << x`) for rapid parent/child index lookups.
-  * Overrode and optimized heapify-up and heapify-down mechanics to ensure strict $O(\log_d n)$ operational bounds.
-
-### 2. Distributed System Architecture (UML)
-* **Problem Statement:** Designing a resilient, decoupled, and asynchronous communication layer between Walmart's internal inventory tracking system and external shipping logistics fulfillment nodes.
-* **Solution Built:** Modeled a comprehensive **UML Class Diagram** detailing the distributed system architecture. Defined strict component boundaries, explicit interface contracts, and secure access modifiers to gracefully handle high-volume transactional state changes when shipments are generated, updated, or dispatched.
-
-### 3. Relational Database Modeling (ERD)
-* **Problem Statement:** Structuring relational data efficiently to support a fast-growing retail ecosystem spanning entirely distinct logistical domains—specifically, the **Shipping Department** and the **Pet Department**.
-* **Solution Built:** Architected a comprehensive **Entity-Relationship Diagram (ERD)** completely normalized to Third Normal Form (3NF).
-* **Key Implementations:**
-  * Created normalized transactional schemas capturing clear one-to-many ($1:N$) and many-to-many ($M:N$) enterprise relationships.
-  * Incorporated strict foreign key constraints, indexing strategies for optimized primary lookups, and explicit cascading rules to enforce absolute data integrity across isolated department lines.
+* **Verification Reference:** Program Completion Code: `KxPGdSEmEG2weCCeP`
 
 ---
 
-## 🚀 Key Technologies & Concepts Utilized
-* **Languages & Runtimes:** Java (JDK 17+)
+## 🛠️ Simulation Core Tasks
+
+### 📂 Task 1: Advanced Data Structures (Algorithmic Optimization)
+* **Objective:** Address high-throughput latency bottlenecks in Walmart's core fulfillment systems caused by standard binary data structure limits under heavy parallel operations.
+* **Implementation:** Engineered a generic, highly performant **Power-of-Two Max Heap** in Java. Configured dynamic branching factors ($2^x$) to optimize memory cache locality and reduce lookup tree depth.
+* **Optimization:** Replaced arithmetic computations with fast bit-shifting operations (`index << x`) to streamline child and parent index traversal.
+
+### 📂 Task 2: Software Architecture (Distributed System Design)
+* **Objective:** Map a resilient, decoupled communication layer connecting internal inventory processing databases with external logistics and shipping nodes.
+* **Implementation:** Designed a detailed **UML Class Diagram** defining component boundaries, interface contracts, and access modifiers to securely handle high-volume transactional state changes asynchronously.
+
+### 📂 Task 3: Relational Database Design (Data Modeling)
+* **Objective:** Structure relational schemas efficiently to store data across independent corporate ecosystems—specifically handling logistics for the Shipping and Pet departments.
+* **Implementation:** Architected an **Entity-Relationship Diagram (ERD)** normalized to Third Normal Form (3NF). Created robust transactional tables establishing clean $1:N$ and $M:N$ relationships featuring strict foreign key indexing and cascading rules.
+
+### 📂 Task 4: Data Munging (Pipeline Processing)
+* **Objective:** Process, clean, and manipulate raw transactional streams to prepare disparate corporate datasets for downstream production analytics pipelines.
+* **Implementation:** Developed data transformations to parse input logs, handle missing values, map schema fields correctly, and ensure data uniformity before target ingestion.
+
+---
+
+## 🚀 Technical Framework & Core Concepts
+* **Languages & Scripting:** Java (JDK 17+)
 * **System Design & Modeling:** Unified Modeling Language (UML), Entity-Relationship Diagram (ERD)
-* **Computer Science Core:** Data Structures & Algorithms (DSA), Custom Heaps, Cache Locality, Relational Database Normalization (3NF)
+* **Computer Science Core:** Data Structures & Algorithms (DSA), Cache Locality, Relational Database Normalization (3NF), Data Preprocessing & Munging
 
 ---
 
-## 📂 Repository Organization
-```text
-├── 🧠 algorithmic-optimization/
-│   ├── src/
-│   │   └── PowerOfTwoMaxHeap.java       # Custom Java heap implementation
-│   └── README.md                        # Analysis on time/space complexity bounds
-│
-├── 📐 system-architecture/
-│   ├── diagrams/
-│   │   ├── system_architecture_uml.png  # Visual UML Class Diagram export
-│   │   └── database_schema_erd.png      # Visual 3NF ERD Design export
-│   └── README.md                        # System architectural pattern justifications
+## 📂 Repository Layout
+* `/Task 1 Advanced Data Structures` — Source code, edge cases, and performance logic for the custom heap.
+* `/Task 2 Software Architecture` — Visual exports of the UML Class Diagrams and architectural contracts.
+* `/Task 3 Relational Database Design` — Entity-Relationship model mapping out the 3NF schema.
+* `/Task 4 Data Munging` — Pipeline scripts handling dataset wrangling and processing.
+* `Completion_Certificate.pdf` — Official program completion document.
+
+---
+*Disclaimer: This project was completed as part of an officially authorized, executive-recognized job simulation designed by Walmart Global Tech to mirror real-world engineering workflows.*
